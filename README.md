@@ -29,6 +29,6 @@ Finally execute these:
 
 ```
 . build/envsetup.sh
-lunch twrp_OP4ABB-eng
+lunch twrp_OP5231-eng
 mka -j$(nproc --all) recoveryimage
 ```

@@ -44,7 +44,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_BUILD_TYPE="Unofficial-Stable"
 
 # Custom pic for the maintainer's info in about section
-	export OF_MAINTAINER_AVATAR="$PWD/device/oplus/OP4ABB/maintainer.png"
+	export OF_MAINTAINER_AVATAR="$PWD/device/oplus/OP5231/maintainer.png"
 	
 # Device Information.
 	export FOX_ARCH=arm64
