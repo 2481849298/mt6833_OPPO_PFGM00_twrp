@@ -1,10 +1,5 @@
 DEVICE_PATH := device/oplus/OP5231
 
-BOARD_SHIPPING_API_LEVEL := 31
-BOARD_API_LEVEL := 31
-SHIPPING_API_LEVEL := 31
-PRODUCT_SHIPPING_API_LEVEL := 31
-PRODUCT_TARGET_VNDK_VERSION := 31
 
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -33,7 +28,9 @@ PRODUCT_PACKAGES += \
 BUILD_FINGERPRINT := oplus/ossi/ossi:12/SP1A.210812.016/1721011260820:user/release-keys
 
 # f2fs utilities
-PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES_DEBUG += \
     sg_write_buffer \
     f2fs_io \
-    check_f2fs
+    check_f2fs \
+    bootctl \
+    update_engine_client
