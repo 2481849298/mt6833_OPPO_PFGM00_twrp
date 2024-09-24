@@ -1,7 +1,5 @@
 <!--
     Input:
-        manifest_apuware_apusys.xml
-        manifest_apuware_xrp.xml
         manifest_apuware_utils.xml
         manifest_sensor_hidl_v2.xml
         manifest_audio.xml
@@ -24,10 +22,10 @@
         manifest_apmonitor.xml
         manifest_nwk_opt.xml
         manifest_composer.xml
-        manifest_target_level_q.xml
+        manifest_target_level_r.xml
         manifest.xml
 -->
-<manifest version="4.0" type="device" target-level="4">
+<manifest version="4.0" type="device" target-level="5">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -77,16 +75,6 @@
             <instance>internal/0</instance>
         </interface>
         <fqname>@2.6::ICameraProvider/internal/0</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.configstore</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>ISurfaceFlingerConfigs</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
@@ -258,16 +246,6 @@
         <fqname>@2.0::IApmService/apm_hidl_service</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.apuware.apusys</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>INeuronApusys</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.1::INeuronApusys/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.apuware.utils</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -276,16 +254,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.0::IApuwareUtils/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.mediatek.hardware.apuware.xrp</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>INeuronXrp</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::INeuronXrp/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.atci</name>
@@ -513,4 +481,5 @@
     <sepolicy>
         <version>31.0</version>
     </sepolicy>
+    <kernel target-level="5"/>
 </manifest>

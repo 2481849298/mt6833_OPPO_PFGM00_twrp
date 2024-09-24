@@ -1,5 +1,5 @@
 # android_device_mtk6873
-构建适用 OPPO-Realme  A92STWRP
+构建适用 OPPO-Realme  A93STWRP
 
 ## 特征
 
