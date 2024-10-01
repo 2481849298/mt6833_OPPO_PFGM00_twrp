@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
     fastbootd
     
-BUILD_FINGERPRINT := oplus/ossi/ossi:12/SP1A.210812.016/1721011260820:user/release-keys
+ro.vendor.build.fingerprint=oplus/ossi/ossi:12/SP1A.210812.016/1712044009060:user/release-keys
 
 # f2fs utilities
 PRODUCT_PACKAGES_DEBUG += \
