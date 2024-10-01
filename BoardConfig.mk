@@ -200,5 +200,5 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 # System as root
 BOARD_SUPPRESS_SECURE_ERASE := true
 
-TARGET_INIT_VENDOR_LIB := libinit_oppo6833
-TARGET_RECOVERY_DEVICE_MODULES := libinit_oppo6833
+
+TW_OVERRIDE_SYSTEM_PROPS := "ro.build.version.sdk"
